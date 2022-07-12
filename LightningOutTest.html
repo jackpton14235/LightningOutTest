@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <script src="https://resilient-panda-vqkiy4-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
+    <!-- <script src="https://resilient-panda-vqkiy4-dev-ed.my.salesforce.com/lightning/lightning.out.js">
+        
+    </script> -->
+    <script>
+        fetch('https://resilient-panda-vqkiy4-dev-ed.my.salesforce.com/lightning/lightning.out.js')
+        .then(res => res.text())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+    </script>
     <script>
         const appName = 'c:LightningOutApp';
         const componentName = 'c:TestLightningTab';
