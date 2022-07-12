@@ -2,11 +2,13 @@
 <html>
     <script src="https://jacklightningout-developer-edition.na213.force.com/lightning/lightning.out.js">
     </script>
+    <div data-lightning-out="true"></div>
+    
     <script>
         const appName = 'c:LightningOutApp';
         const componentName = 'c:helloWorld';
         const lightningEndpoint = 'https://jacklightningout-developer-edition.na213.force.com';
-        const targetElement = document.getElementById('target');
+        const targetElement = document.querySelector("[data-lightning-out]");
         const componentAttributes = {};
 
         $Lightning.use(
@@ -22,5 +24,4 @@
             lightningEndpoint
         );
     </script>
-    <div id="target"></div>
 </html>
